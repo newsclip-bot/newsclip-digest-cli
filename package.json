@@ -1,5 +1,5 @@
 {
-  "name": "newsclip-digest-cli",
+  "name": "@newsclip/newsclip-digest-cli",
   "version": "0.1.0",
   "description": "Generate a simple markdown digest from a Newsclip category page.",
   "main": "index.js",
