@@ -26,9 +26,10 @@ npm run start -- https://newsclip.com/business/
 - Best-effort parsing is used to keep dependencies minimal.
 
 
+
 ## Documentation
 
-View the [GitHub Pages documentation](./docs/index.html) for this utility.
+View the [GitHub Pages documentation](https://newsclip-bot.github.io/newsclip-digest-cli/) for this utility.
 
 ## License
 MIT
