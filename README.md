@@ -25,6 +25,11 @@ npm run start -- https://newsclip.com/business/
 - This repo is intentionally small and readable.
 - Best-effort parsing is used to keep dependencies minimal.
 
+
+## Documentation
+
+View the [GitHub Pages documentation](./docs/index.html) for this utility.
+
 ## License
 MIT
 
