@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 26, 2025 at 04:13 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/jacob-lee-bard-kentucky-state-university-shooting-display.jpg" alt="Grand Jury Declines to Indict Father in University Shooting: A Complex Case of Self-Defense" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/grand-jury-declines-to-indict-father-in-university-shooting-a-complex-case-of-self-defense" title="Grand Jury Declines to Indict Father in University Shooting: A Complex Case of Self-Defense">Grand Jury Declines to Indict Father in University Shooting: A Complex Case of Self-Defense</a></h3>
+          <p class="article-excerpt">In a controversial decision, a grand jury chose not to indict Jacob Lee Bard, who cited self-defense in a shooting that left one student dead at Kentucky State University. This case raises crucial questions about self-d…</p>
+          <div class="article-hashtags">#KentuckyShooting #SelfDefense #CampusSafety #CommunityTrust #LegalAnalysis</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-53954.jpg" alt="The Complex Case of Russia&#039;s Archaeologist: Justice or Persecution in Crimea?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-complex-case-of-russias-archaeologist-justice-or-persecution-in-crimea" title="The Complex Case of Russia&#039;s Archaeologist: Justice or Persecution in Crimea?">The Complex Case of Russia&#039;s Archaeologist: Justice or Persecution in Crimea?</a></h3>
+          <p class="article-excerpt">The call for the extradition of a Russian archaeologist from Poland raises significant questions about legality and ethics in occupied Crimea. As tensions rise, what are the implications for academia and international l…</p>
+          <div class="article-hashtags">#CulturalHeritage #InternationalLaw #Ukraine #Archaeology #AcademicFreedom</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/25/multimedia/25dc-travel-ban-mlvw/25dc-travel-ban-mlvw-facebookJumbo.jpg" alt="Judge Steps In to Protect Researcher from U.S. Censorship Actions" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/judge-steps-in-to-protect-researcher-from-us-censorship-actions" title="Judge Steps In to Protect Researcher from U.S. Censorship Actions">Judge Steps In to Protect Researcher from U.S. Censorship Actions</a></h3>
+          <p class="article-excerpt">Imran Ahmed, a British researcher fighting online hate and disinformation, wins a temporary reprieve from a travel ban imposed by the Trump administration, highlighting a crucial clash between free speech and government…</p>
+          <div class="article-hashtags">#FreeSpeech #DigitalHate #Disinformation #LegalRights #Censorship</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-53962.jpg" alt="Honoring Bravery: Australia&#039;s Response to Antisemitic Terrorism" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/honoring-bravery-australias-response-to-antisemitic-terrorism" title="Honoring Bravery: Australia&#039;s Response to Antisemitic Terrorism">Honoring Bravery: Australia&#039;s Response to Antisemitic Terrorism</a></h3>
+          <p class="article-excerpt">In the wake of the Bondi Beach terrorist attack, Australia has announced a national bravery award to honor the courageous individuals who stood up against hatred. This urgent recognition comes at a pivotal moment in the…</p>
+          <div class="article-hashtags">#BondiBeach #BraveryAwards #Antisemitism #CivicResponsibility #JusticeForAll</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/22/multimedia/00int-gaza-malnutrition-tqhl/00int-gaza-malnutrition-tqhl-facebookJumbo.jpg" alt="Hoda&#039;s Struggle: A 12-Year-Old&#039;s Fight Against Famine in Gaza" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/hodas-struggle-a-12-year-olds-fight-against-famine-in-gaza" title="Hoda&#039;s Struggle: A 12-Year-Old&#039;s Fight Against Famine in Gaza">Hoda&#039;s Struggle: A 12-Year-Old&#039;s Fight Against Famine in Gaza</a></h3>
+          <p class="article-excerpt">In the heart of Gaza, 12-year-old Hoda Abu al-Naja battles extreme hunger exacerbated by severe malnutrition and celiac disease, trapped in a dire humanitarian crisis. This poignant account unveils her fight for surviva…</p>
+          <div class="article-hashtags">#GazaCrisis #Malnutrition #HumanRights #CeliacDisease #FoodSecurity</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54006.jpg" alt="Can Socialized Medicine Survive the Chilling Winds of Change?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/can-socialized-medicine-survive-the-chilling-winds-of-change" title="Can Socialized Medicine Survive the Chilling Winds of Change?">Can Socialized Medicine Survive the Chilling Winds of Change?</a></h3>
+          <p class="article-excerpt">As debates on socialized medicine heat up, the harsh realities of winter loom. Join me as I explore the sustainable future of healthcare systems under economic strain and political pressure.</p>
+          <div class="article-hashtags">#SocializedMedicine #HealthcareReform #EconomicStrain #PoliticalClimate #UniversalHealthcare</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54275.jpg" alt="The Perilous Purge: Trump&#039;s Diplomatic Dismissals" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-perilous-purge-trumps-diplomatic-dismissals" title="The Perilous Purge: Trump&#039;s Diplomatic Dismissals">The Perilous Purge: Trump&#039;s Diplomatic Dismissals</a></h3>
+          <p class="article-excerpt">In a brazen move, Trump&#039;s mass firing of U.S. diplomats could destabilize crucial international relationships. This article delves into the implications of this risky decision and the broader consequences for American d…</p>
+          <div class="article-hashtags">#Diplomacy #TrumpAdministration #InternationalRelations #ForeignPolicy #Accountability</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/793e5ea34002683c3c509acf474376fad3bfc341/1013_0_5833_4667/master/5833.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&amp;enable=upscale&amp;s=bc67c16ed507160b59593e5d550c062b" alt="Redefining Boys and Reading: Beyond the Buzz of Thrillers" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/redefining-boys-and-reading-beyond-the-buzz-of-thrillers" title="Redefining Boys and Reading: Beyond the Buzz of Thrillers">Redefining Boys and Reading: Beyond the Buzz of Thrillers</a></h3>
+          <p class="article-excerpt">As Louis Provis points out, fostering a genuine love for reading in boys requires more than just swapping out literature. It demands systemic change in how we approach literacy, steering against the tide of stereotypica…</p>
+          <div class="article-hashtags">#BoysAndReading #LiteracyReform #Education #TransformativeLiterature #ToxicMasculinity</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54277.jpg" alt="Why AI Demands Strategic Oversight: A Call for Smart Regulation" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/why-ai-demands-strategic-oversight-a-call-for-smart-regulation" title="Why AI Demands Strategic Oversight: A Call for Smart Regulation">Why AI Demands Strategic Oversight: A Call for Smart Regulation</a></h3>
+          <p class="article-excerpt">As AI technology continues to evolve at an unprecedented pace, the critical need for strategic regulation has never been more urgent. Without a framework to guide its development, we risk losing sight of ethical conside…</p>
+          <div class="article-hashtags">#AISafety #TechRegulation #EthicalAI #CivicAccountability #Innovation</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54008.jpg" alt="The Unseen Costs of Washington&#039;s &#039;Gifts&#039;: Who Really Benefits?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-unseen-costs-of-washingtons-gifts-who-really-benefits" title="The Unseen Costs of Washington&#039;s &#039;Gifts&#039;: Who Really Benefits?">The Unseen Costs of Washington&#039;s &#039;Gifts&#039;: Who Really Benefits?</a></h3>
+          <p class="article-excerpt">What does it truly mean when our state hands out &#039;gifts&#039;? In this exposé, I dive deep into the implications of such practices, revealing the intricate web of interests and accountability—or the lack thereof. Join me as…</p>
+          <div class="article-hashtags">#PoliticalTransparency #CivicAccountability #WashingtonState #InvestigativeJournalism #PublicInterest</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2252430167.jpg?w=1600&amp;quality=80&amp;webp=1" alt="James Madison&#039;s QB Alonza Barnett III Enters Transfer Portal: What This Means for College Football" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/james-madisons-qb-alonza-barnett-iii-enters-transfer-portal-what-this-means-for-college-football" title="James Madison&#039;s QB Alonza Barnett III Enters Transfer Portal: What This Means for College Football">James Madison&#039;s QB Alonza Barnett III Enters Transfer Portal: What This Means for College Football</a></h3>
+          <p class="article-excerpt">Amidst a flurry of transfer decisions leading into the historic transfer portal opening, James Madison&#039;s star quarterback, Alonza Barnett III, announces his departure. What does this mean for his future and the competit…</p>
+          <div class="article-hashtags">#CollegeFootball #TransferPortal #SportsNews #JamesMadison #PlayerMovement</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/55a0/live/51a2e9e0-e0e1-11f0-94d6-33dfd766fcaa.jpg" alt="Amorim Holds the Line: No Departures Without Replacements at United" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/amorim-holds-the-line-no-departures-without-replacements-at-united" title="Amorim Holds the Line: No Departures Without Replacements at United">Amorim Holds the Line: No Departures Without Replacements at United</a></h3>
+          <p class="article-excerpt">In a bold assertion, Manchester United&#039;s head coach Ruben Amorim states that no player will depart the club this January without a proper replacement lined up. As the transfer window approaches, the stakes couldn&#039;t be h…</p>
+          <div class="article-hashtags">#ManchesterUnited #RubenAmorim #TransferWindow #FootballStrategy #YouthDevelopment</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54319.jpg" alt="Rockets Rally: Energized At Home Against the Cavaliers" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/rockets-rally-energized-at-home-against-the-cavaliers" title="Rockets Rally: Energized At Home Against the Cavaliers">Rockets Rally: Energized At Home Against the Cavaliers</a></h3>
+          <p class="article-excerpt">Fresh off a morale-boosting victory, the Rockets are set to ignite the court against the Cavaliers. Will home advantage fuel their fire for another win? Let&#039;s dive into what makes this matchup pivotal.</p>
+          <div class="article-hashtags">#HoustonRockets #ClevelandCavaliers #NBA #Basketball #SportsAnalysis</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0805%2Fr1369002_1296x729_16%2D9.jpg" alt="Michigan Eyes Utah&#039;s Whittingham: A Perfect Match?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/michigan-eyes-utahs-whittingham-a-perfect-match" title="Michigan Eyes Utah&#039;s Whittingham: A Perfect Match?">Michigan Eyes Utah&#039;s Whittingham: A Perfect Match?</a></h3>
+          <p class="article-excerpt">As Michigan ramps up its coaching search, Utah&#039;s Kyle Whittingham is emerging as a prime candidate. With a storied history leading the Utes, could he be the answer to restoring glory in Ann Arbor?</p>
+          <div class="article-hashtags">#CollegeFootball #MichiganWolverines #KyleWhittingham #CoachingSearch #UtahUtes</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/steve-kerr-122525.jpg" alt="Steve Kerr Takes Charge: Navigating the Heat of the Moment with Draymond Green" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/steve-kerr-takes-charge-navigating-the-heat-of-the-moment-with-draymond-green" title="Steve Kerr Takes Charge: Navigating the Heat of the Moment with Draymond Green">Steve Kerr Takes Charge: Navigating the Heat of the Moment with Draymond Green</a></h3>
+          <p class="article-excerpt">In a candid moment, Warriors coach Steve Kerr reflects on his heated sideline exchange with Draymond Green, emphasizing the lessons learned from their clash and the importance of their resilient partnership.</p>
+          <div class="article-hashtags">#Warriors #SteveKerr #DraymondGreen #NBA #SportsLeadership</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54119.jpg" alt="Celebrating Voices: An Open Mic Night at Little Jamaica" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/celebrating-voices-an-open-mic-night-at-little-jamaica" title="Celebrating Voices: An Open Mic Night at Little Jamaica">Celebrating Voices: An Open Mic Night at Little Jamaica</a></h3>
+          <p class="article-excerpt">As we bid farewell to another eventful year, an open mic night at Little Jamaica brought together diverse voices and stories that encapsulated the essence of community and creativity. Join me as I delve into this celebr…</p>
+          <div class="article-hashtags">#OpenMicNight #LittleJamaica #LocalArtists #CulturalExpression #CommunityVoices</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/01/04/multimedia/04cul-marty-cameos-top/04cul-marty-cameos-top-facebookJumbo.jpg" alt="Cameos Galore: Unpacking the Surprising Stars of &#039;Marty Supreme&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/cameos-galore-unpacking-the-surprising-stars-of-marty-supreme" title="Cameos Galore: Unpacking the Surprising Stars of &#039;Marty Supreme&#039;">Cameos Galore: Unpacking the Surprising Stars of &#039;Marty Supreme&#039;</a></h3>
+          <p class="article-excerpt">From the likes of Kevin O&#039;Leary to Tyler, the Creator, &#039;Marty Supreme&#039; hilariously weaves unexpected cameos into its quirky narrative. Join me as we dissect these delightful appearances and their significance in the fil…</p>
+          <div class="article-hashtags">#MartySupreme #Cameos #FilmIndustry #JoshSafdie #CulturalCommentary</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-53880.jpg" alt="The Bailey Buzz: Culture&#039;s Curious Pulse on Christmas Day 2025" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-bailey-buzz-cultures-curious-pulse-on-christmas-day-2025" title="The Bailey Buzz: Culture&#039;s Curious Pulse on Christmas Day 2025">The Bailey Buzz: Culture&#039;s Curious Pulse on Christmas Day 2025</a></h3>
+          <p class="article-excerpt">Explore the cultural currents shaping our world this Christmas day in 2025. From the latest entertainment trends to compelling stories behind the scenes, join me as we navigate the festive landscape that brings art and…</p>
+          <div class="article-hashtags">#Christmas2025 #EntertainmentNews #CulturalCritique #HolidayMovies #ArtsAndCulture</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54117.jpg" alt="Mark Your Calendars: &#039;Wicked: For Good&#039; Arrives on Prime Video December 30!" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/mark-your-calendars-wicked-for-good-arrives-on-prime-video-december-30" title="Mark Your Calendars: &#039;Wicked: For Good&#039; Arrives on Prime Video December 30!">Mark Your Calendars: &#039;Wicked: For Good&#039; Arrives on Prime Video December 30!</a></h3>
+          <p class="article-excerpt">Get ready, theater lovers! &#039;Wicked: For Good&#039; is set to debut on Prime Video this December 30, bringing the enchanting story of friendship and identity straight to your screens. Don&#039;t miss this magical adaptation of the…</p>
+          <div class="article-hashtags">#Wicked #PrimeVideo #MusicalMagic #FilmAdaptation #TheaterToScreen</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/af9f/live/27f609d0-dbfd-11f0-a030-476ae6d8c14a.jpg" alt="Sydney Sweeney&#039;s Passion for Impactful Storytelling in &#039;The Housemaid&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/sydney-sweeneys-passion-for-impactful-storytelling-in-the-housemaid" title="Sydney Sweeney&#039;s Passion for Impactful Storytelling in &#039;The Housemaid&#039;">Sydney Sweeney&#039;s Passion for Impactful Storytelling in &#039;The Housemaid&#039;</a></h3>
+          <p class="article-excerpt">In her latest role in &#039;The Housemaid,&#039; Sydney Sweeney passionately embraces storytelling that delves into complex issues, aiming to inspire and save lives.</p>
+          <div class="article-hashtags">#SydneySweeney #TheHousemaid #DomesticViolence #FilmReview #Entertainment</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/woman-types-on-desktop-computer.jpg" alt="Navigating the AI Landscape: Preserving Our Humanity" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/navigating-the-ai-landscape-preserving-our-humanity" title="Navigating the AI Landscape: Preserving Our Humanity">Navigating the AI Landscape: Preserving Our Humanity</a></h3>
+          <p class="article-excerpt">In the face of rapid AI advancement, how can we integrate technology into our lives without sacrificing our essential humanity? Join me as we explore the delicate balance between innovation and ethical responsibility.</p>
+          <div class="article-hashtags">#ArtificialIntelligence #EthicsInTech #BusinessAnalysis #Innovation #Humanity</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/5840/live/35baaca0-df41-11f0-a5e8-050d4171e402.jpg.webp" alt="Maximizing Joy: Smart Ways to Handle Unwanted Christmas Gifts" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/maximizing-joy-smart-ways-to-handle-unwanted-christmas-gifts" title="Maximizing Joy: Smart Ways to Handle Unwanted Christmas Gifts">Maximizing Joy: Smart Ways to Handle Unwanted Christmas Gifts</a></h3>
+          <p class="article-excerpt">As holiday celebrations fade, many of us are left with gifts that miss the mark. Discover how to repurpose, repack, or simply pass along those unwanted items without feeling guilty. Dive into practical and sustainable o…</p>
+          <div class="article-hashtags">#Christmas #Regifting #Sustainability #CostOfLiving #GiftGiving #Charity</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-54430.jpg" alt="Consultant Held Liable for Bad Business Advice That Sank Laundry Firm" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/consultant-held-liable-for-bad-business-advice-that-sank-laundry-firm" title="Consultant Held Liable for Bad Business Advice That Sank Laundry Firm">Consultant Held Liable for Bad Business Advice That Sank Laundry Firm</a></h3>
+          <p class="article-excerpt">A recent court ruling highlights the significant repercussions of poor consulting advice, as a laundry business faces closure. The outcome raises vital questions about accountability in professional services and the rea…</p>
+          <div class="article-hashtags">#LegalLiability #Consulting #BusinessFail #Accountability #RiskManagement</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://media.wired.com/photos/694089665ef9ba38705f23ec/191:100/w_1280,c_limit/WIRED-WORLD-CYBER-TRUCK-TARRIFS.jpg" alt="The Cracking Facade of US Trade Dominance: A New Era Approaches" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-cracking-facade-of-us-trade-dominance-a-new-era-approaches" title="The Cracking Facade of US Trade Dominance: A New Era Approaches">The Cracking Facade of US Trade Dominance: A New Era Approaches</a></h3>
+          <p class="article-excerpt">As 2026 unfolds, nations may uncover strategies to counteract the burdens of Trump&#039;s tariffs, potentially invigorating their economies while making goods more affordable for consumers worldwide. Join me in exploring the…</p>
+          <div class="article-hashtags">#GlobalTrade #EconomicStrategy #Tariffs #Innovation #ConsumerEconomics</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/open-ai-sam-altman-chatgpt.jpg" alt="The Uneasy Launch of ChatGPT&#039;s GPT-5.2: Progress or Pressure?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-uneasy-launch-of-chatgpts-gpt-52-progress-or-pressure" title="The Uneasy Launch of ChatGPT&#039;s GPT-5.2: Progress or Pressure?">The Uneasy Launch of ChatGPT&#039;s GPT-5.2: Progress or Pressure?</a></h3>
+          <p class="article-excerpt">OpenAI&#039;s ChatGPT has just rolled out its GPT-5.2 version, claiming improvements in coding, writing, and image interpretation. Yet, does this upgrade feel more like a rushed response to competition rather than a meaningf…</p>
+          <div class="article-hashtags">#AI #ChatGPT #OpenAI #Technology #Innovation</div>
+          <time class="article-date">December 26, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
