@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: March 14, 2026 at 06:00 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/gettysburg-mayor-chad-alan-carr.jpg" alt="Former Gettysburg Mayor Arrested: A Disturbing Tale of Betrayal and Abuse" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/former-gettysburg-mayor-arrested-a-disturbing-tale-of-betrayal-and-abuse" title="Former Gettysburg Mayor Arrested: A Disturbing Tale of Betrayal and Abuse">Former Gettysburg Mayor Arrested: A Disturbing Tale of Betrayal and Abuse</a></h3>
+          <p class="article-excerpt">Chad Alan-Carr, the ex-mayor of Gettysburg, faces shocking child sex abuse charges after a mere two weeks in office, raising serious questions about accountability within civic leadership.</p>
+          <div class="article-hashtags">#ChildProtection #CorruptionInOffice #Gettysburg #JusticeForVictims #Accountability</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/iran-crypto.jpg" alt="Iran&#039;s Crypto Strategy Unveiled Amid Internet Blackout" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/irans-crypto-strategy-unveiled-amid-internet-blackout" title="Iran&#039;s Crypto Strategy Unveiled Amid Internet Blackout">Iran&#039;s Crypto Strategy Unveiled Amid Internet Blackout</a></h3>
+          <p class="article-excerpt">A recent analysis reveals Iran&#039;s Islamic Revolutionary Guard Corps orchestrated crypto transactions worth hundreds of millions during a nationwide internet failure, indicating their adeptness at circumventing sanctions.</p>
+          <div class="article-hashtags">#IranSanctions #CryptoEvasion #GeopoliticalAnalysis #CryptoInfrastructure #InternationalRelations</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/37d4/live/b4e27fb0-1f30-11f1-8878-496c8cd59e21.jpg" alt="Escalating Tensions: US Deploys More Troops and Naval Power to the Middle East" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/escalating-tensions-us-deploys-more-troops-and-naval-power-to-the-middle-east" title="Escalating Tensions: US Deploys More Troops and Naval Power to the Middle East">Escalating Tensions: US Deploys More Troops and Naval Power to the Middle East</a></h3>
+          <p class="article-excerpt">In a significant military shift, the United States is moving additional Marines and warships to the Middle East. This decision coincides with heightened geopolitical tensions and the urgent need to secure vital shipping…</p>
+          <div class="article-hashtags">#MiddleEast #USMilitary #Geopolitics #Iran #OilMarkets</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/hormus-strait-iran-vessels.jpg" alt="Iran&#039;s Deceptive Drone Warfare: A New Threat in the Strait of Hormuz" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/irans-deceptive-drone-warfare-a-new-threat-in-the-strait-of-hormuz" title="Iran&#039;s Deceptive Drone Warfare: A New Threat in the Strait of Hormuz">Iran&#039;s Deceptive Drone Warfare: A New Threat in the Strait of Hormuz</a></h3>
+          <p class="article-excerpt">Iran&#039;s latest tactic of deploying explosive-laden drone boats disguised as fishing vessels poses an alarming threat to global shipping. With escalating tensions and promises to keep the Strait of Hormuz closed, the ques…</p>
+          <div class="article-hashtags">#Iran #StraitOfHormuz #MaritimeSecurity #GlobalTrade #HybridWarfare</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/c670/live/c49e5040-141e-11f1-963a-55716ece1b4d.jpg" alt="Alps Avalanche Deaths Surge: Weather Woes and Skiers&#039; Complacency" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/alps-avalanche-deaths-surge-weather-woes-and-skiers-complacency" title="Alps Avalanche Deaths Surge: Weather Woes and Skiers&#039; Complacency">Alps Avalanche Deaths Surge: Weather Woes and Skiers&#039; Complacency</a></h3>
+          <p class="article-excerpt">This season has witnessed over 100 ski-related fatalities in the French Alps, prompting urgent calls for better preparation and awareness among skiers. Join me as we explore the contributing factors driving this alarmin…</p>
+          <div class="article-hashtags">#AvalancheSafety #Alps #WinterSports #SkiingRisks #ClimateChange</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/01/pennsylvania-governor-josh-shapiro.jpg" alt="The Irony of Power: Gov. Shapiro&#039;s Neighbors Fight Back" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-irony-of-power-gov-shapiros-neighbors-fight-back" title="The Irony of Power: Gov. Shapiro&#039;s Neighbors Fight Back">The Irony of Power: Gov. Shapiro&#039;s Neighbors Fight Back</a></h3>
+          <p class="article-excerpt">In a shocking twist, Pennsylvania Governor Josh Shapiro faces allegations of squatting on his neighbors&#039; land to build a security fence. What does this mean for his political future and the power dynamics at play?</p>
+          <div class="article-hashtags">#PennsylvaniaPolitics #PropertyRights #GovShapiro #LegalDebacle #AdversePossession</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107106.jpg" alt="Tallahassee in the Aftermath: A Call for Reflection" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tallahassee-in-the-aftermath-a-call-for-reflection" title="Tallahassee in the Aftermath: A Call for Reflection">Tallahassee in the Aftermath: A Call for Reflection</a></h3>
+          <p class="article-excerpt">In the wake of recent tumultuous events in Tallahassee, it&#039;s time for us to scrutinize not just the chaos but the underlying currents that led us here. Join me as we unpack the implications of this wreckage and the urge…</p>
+          <div class="article-hashtags">#Tallahassee #CommunityVoices #PoliticalAccountability #CivicEngagement #FutureOfDemocracy</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106766.jpg" alt="Honoring Dr. Elayne Hayes-Anthony: A Legacy of Change" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/honoring-dr-elayne-hayes-anthony-a-legacy-of-change" title="Honoring Dr. Elayne Hayes-Anthony: A Legacy of Change">Honoring Dr. Elayne Hayes-Anthony: A Legacy of Change</a></h3>
+          <p class="article-excerpt">Dr. Elayne Hayes-Anthony&#039;s remarkable contributions to our community resonate deeply as we reflect on her legacy. With a fearless commitment to fostering social justice and civic engagement, she has left an indelible ma…</p>
+          <div class="article-hashtags">#ElayneHayesAnthony #SocialJustice #CivicEngagement #LegacyOfChange #CommunityLeadership</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107107.jpg" alt="Reimagining Church Welcomes: An Editorial Call to Action" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/reimagining-church-welcomes-an-editorial-call-to-action" title="Reimagining Church Welcomes: An Editorial Call to Action">Reimagining Church Welcomes: An Editorial Call to Action</a></h3>
+          <p class="article-excerpt">In a world yearning for connection, how can churches authentically open their doors? This editorial explores the urgent need for a welcoming approach that transcends boundaries and fulfills a vital community role.</p>
+          <div class="article-hashtags">#InclusiveChurch #CommunityEngagement #FaithInAction #SpiritualJourney #ChurchCulture</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106759.jpg" alt="Unpacking the Judicial Climate Science Scandal" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unpacking-the-judicial-climate-science-scandal" title="Unpacking the Judicial Climate Science Scandal">Unpacking the Judicial Climate Science Scandal</a></h3>
+          <p class="article-excerpt">The alleged collusion between judicial figures and climate change denial groups raises serious questions about integrity and accountability. I invite you to examine how this scandal threatens not only scientific credibi…</p>
+          <div class="article-hashtags">#ClimateJustice #JudicialIntegrity #ScienceInLaw #Accountability #EthicsInJudiciary</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/usa-wbc-1.jpg" alt="Team USA Triumphs Over Canada: Baseball Classic Quarterfinals Review" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/team-usa-triumphs-over-canada-baseball-classic-quarterfinals-review" title="Team USA Triumphs Over Canada: Baseball Classic Quarterfinals Review">Team USA Triumphs Over Canada: Baseball Classic Quarterfinals Review</a></h3>
+          <p class="article-excerpt">In a thrilling showdown, Team USA bested Canada 5-3 in the World Baseball Classic quarterfinals, asserting dominance in international sports. This marks an exciting moment for American baseball as they edge closer to th…</p>
+          <div class="article-hashtags">#WorldBaseballClassic #TeamUSA #SportsDominance #Baseball #CanadaVsUSA #SportsNews</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/madison-pettis-michael-porter-jr-004.jpg" alt="Madison Pettis Exposes Dark Side of NBA Romance: &quot;He Was a Psychopath&quot;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/madison-pettis-exposes-dark-side-of-nba-romance-he-was-a-psychopath" title="Madison Pettis Exposes Dark Side of NBA Romance: &quot;He Was a Psychopath&quot;">Madison Pettis Exposes Dark Side of NBA Romance: &quot;He Was a Psychopath&quot;</a></h3>
+          <p class="article-excerpt">In a candid podcast interview, actress Madison Pettis reveals shocking details about her past relationship with NBA star Michael Porter Jr., labeling him a &#039;psychopath&#039;. Explore the complexities of love and ambition in…</p>
+          <div class="article-hashtags">#MadisonPettis #MichaelPorterJr #NBARomance #CelebrityNews #SportsRelationships</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/12f1/live/d7ab5650-1fc3-11f1-9120-a910fc22c6ac.jpg" alt="Ireland Triumphs Over Scotland in Thrilling Six Nations Clash" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ireland-triumphs-over-scotland-in-thrilling-six-nations-clash" title="Ireland Triumphs Over Scotland in Thrilling Six Nations Clash">Ireland Triumphs Over Scotland in Thrilling Six Nations Clash</a></h3>
+          <p class="article-excerpt">In a nail-biting showdown at Aviva Stadium, Ireland outplayed Scotland, keeping their championship dreams alive while ending Scotland&#039;s hopes for glory in the Six Nations. This victory solidifies Ireland&#039;s legacy in rug…</p>
+          <div class="article-hashtags">#IrelandRugby #ScotlandRugby #SixNations #TripleCrown #RugbyUnion</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/kaylie-ray-blaire-fleming.jpg" alt="Kaylie Ray&#039;s Fight: The Heartbreak of Competing Amidst Controversy" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/kaylie-rays-fight-the-heartbreak-of-competing-amidst-controversy" title="Kaylie Ray&#039;s Fight: The Heartbreak of Competing Amidst Controversy">Kaylie Ray&#039;s Fight: The Heartbreak of Competing Amidst Controversy</a></h3>
+          <p class="article-excerpt">In a powerful account, former Utah State volleyball star Kaylie Ray reveals the heart-wrenching impact of competing against a transgender athlete. She discusses the emotional toll, injuries, and dreams shattered by the…</p>
+          <div class="article-hashtags">#TransAthleteDebate #WomensSports #NCAA #KaylieRay #SJSUScandal #FairPlay</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2026%2F0314%2Fr1628151_1296x729_16%2D9.jpg" alt="UCLA Triumphs Over Michigan State Despite Bilodeau Injury Setback" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/ucla-triumphs-over-michigan-state-despite-bilodeau-injury-setback" title="UCLA Triumphs Over Michigan State Despite Bilodeau Injury Setback">UCLA Triumphs Over Michigan State Despite Bilodeau Injury Setback</a></h3>
+          <p class="article-excerpt">In a dramatic face-off, UCLA&#039;s Tyler Bilodeau suffered a leg injury, but the Bruins fought valiantly to seal an 88-84 victory over No. 8 Michigan State, advancing to the Big Ten tournament semifinals. The heart of the g…</p>
+          <div class="article-hashtags">#UCLABruins #MarchMadness #BigTen #CollegeBasketball #BilodeauInjury</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/john-f-kennedy-jr-carolyn-bessette-kennedy-tragedy.jpg" alt="A Chilling Premonition: The Final Flight of JFK Jr. Examined" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/a-chilling-premonition-the-final-flight-of-jfk-jr-examined" title="A Chilling Premonition: The Final Flight of JFK Jr. Examined">A Chilling Premonition: The Final Flight of JFK Jr. Examined</a></h3>
+          <p class="article-excerpt">In a haunting revelation, Kyle Bailey, the last person to see JFK Jr. alive, shares his deep concerns about the late icon&#039;s ill-fated flight. His insights shed light on the tragic events of that fateful night in 1999, a…</p>
+          <div class="article-hashtags">#JFKJr #Aviation #Tragedy #KyleBailey #CulturalCommentary</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/brooks-nader-kevin-costner.jpg" alt="Brooks Nader Sets the Record Straight on Dating Rumors with Kevin Costner" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/brooks-nader-sets-the-record-straight-on-dating-rumors-with-kevin-costner" title="Brooks Nader Sets the Record Straight on Dating Rumors with Kevin Costner">Brooks Nader Sets the Record Straight on Dating Rumors with Kevin Costner</a></h3>
+          <p class="article-excerpt">After being spotted with Kevin Costner at a Vegas gala, Brooks Nader clears the air about dating speculation, reminding us all that she&#039;s single and focused on her upcoming role in the &quot;Baywatch&quot; reboot.</p>
+          <div class="article-hashtags">#BrooksNader #KevinCostner #BaywatchReboot #EntertainmentNews #CelebrityCulture</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/14/b9018aa3-f97f-4e24-a18f-25d97ca45bc9/thumbnail/1200x630/836715b4933e60c2c5ae662b3463d5ee/1773493083904.png" alt="Jay Buchanan&#039;s Soulful Solo: A Deep Dive Into &quot;True Black&quot;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/jay-buchanans-soulful-solo-a-deep-dive-into-true-black" title="Jay Buchanan&#039;s Soulful Solo: A Deep Dive Into &quot;True Black&quot;">Jay Buchanan&#039;s Soulful Solo: A Deep Dive Into &quot;True Black&quot;</a></h3>
+          <p class="article-excerpt">In the vibrant landscape of the music world, Jay Buchanan stands out with his powerful solo performance of &quot;True Black.&quot; As the frontman of Rival Sons, he now steps into the limelight with his debut album, inviting us i…</p>
+          <div class="article-hashtags">#JayBuchanan #TrueBlack #WeaponsOfBeauty #SoloArtist #MusicCritique</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://www.rollingstone.com/wp-content/uploads/2026/03/Anitta-leaked-vid.jpg?crop=0px%2C0px%2C1798px%2C1014px&amp;resize=1600%2C900" alt="Anitta Calls Out Former Team Over Leaked &#039;Ta Na Mira&#039; Video" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/anitta-calls-out-former-team-over-leaked-ta-na-mira-video" title="Anitta Calls Out Former Team Over Leaked &#039;Ta Na Mira&#039; Video">Anitta Calls Out Former Team Over Leaked &#039;Ta Na Mira&#039; Video</a></h3>
+          <p class="article-excerpt">In a surprising social media revelation, Anitta expresses her frustration over unauthorized leaks of a long-shelved music video from 2013, claiming it was orchestrated by former team members. Is this a story of betrayal…</p>
+          <div class="article-hashtags">#Anitta #MusicIndustry #LeakedVideo #PopCulture #EntertainmentNews</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets1.cbsnewsstatic.com/hub/i/r/2026/03/14/5a3eb030-9d5d-4367-912b-ad646a584f35/thumbnail/1200x630/f9fffcb8b6c405fc58fc7fb8b04579f8/cbsn-fusion-oscars-2026-predictions-thumbnail.jpg" alt="2026 Oscars: Predictions and Speculations" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/2026-oscars-predictions-and-speculations" title="2026 Oscars: Predictions and Speculations">2026 Oscars: Predictions and Speculations</a></h3>
+          <p class="article-excerpt">Join me as I unpack the buzz leading up to the 98th Academy Awards. From Kat Rosenfield&#039;s insights to potential dark horses, I&#039;ll dive into what to expect this Oscar season.</p>
+          <div class="article-hashtags">#Oscars2026 #FilmPredictions #AcademyAwards #CinemaCulture #KatRosenfield</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/12/7f432e4f-ac0b-4d2b-a30d-e7429c6ed771/thumbnail/1200x630/6524d2b2fcf024cf3f06a44807e9851f/gettyimages-2265282331.jpg" alt="Decoding the Rising Costs at the Pump: What You Really Pay for Gas" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/decoding-the-rising-costs-at-the-pump-what-you-really-pay-for-gas" title="Decoding the Rising Costs at the Pump: What You Really Pay for Gas">Decoding the Rising Costs at the Pump: What You Really Pay for Gas</a></h3>
+          <p class="article-excerpt">As U.S. gas prices spike amid the Iran conflict, it&#039;s essential to understand what truly drives these costs at the pump. Discover the hidden factors behind your gas bill.</p>
+          <div class="article-hashtags">#GasPrices #OilMarket #IranConflict #EconomicImpact #FuelCosts</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106930.jpg" alt="Semmes Officers Sued: A Deep Dive into the Civil Rights Implications of Recent Shootout" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/semmes-officers-sued-a-deep-dive-into-the-civil-rights-implications-of-recent-shootout" title="Semmes Officers Sued: A Deep Dive into the Civil Rights Implications of Recent Shootout">Semmes Officers Sued: A Deep Dive into the Civil Rights Implications of Recent Shootout</a></h3>
+          <p class="article-excerpt">In a significant federal civil rights lawsuit, officers involved in last week&#039;s shootout with a local business owner in Semmes face serious allegations. This case not only raises questions about law enforcement accounta…</p>
+          <div class="article-hashtags">#CivilRights #PoliceAccountability #CommunityTrust #SemmesShooting #LawEnforcement</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2026/03/14/afe97a84-de97-45fc-80d0-8c9e8683b903/thumbnail/1200x630/08a845d7c1f21dfc686b312b8845c1b7/ap26070525672326.jpg" alt="Navigating Peril: U.S. Plans to Escort Oil Tankers through the Strait of Hormuz" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/navigating-peril-us-plans-to-escort-oil-tankers-through-the-strait-of-hormuz" title="Navigating Peril: U.S. Plans to Escort Oil Tankers through the Strait of Hormuz">Navigating Peril: U.S. Plans to Escort Oil Tankers through the Strait of Hormuz</a></h3>
+          <p class="article-excerpt">In response to escalating tensions and surging oil prices amid U.S.-Iran conflicts, the Trump administration&#039;s proposed military escort of vessels in the Strait of Hormuz could reshape global oil dynamics. As experts we…</p>
+          <div class="article-hashtags">#StraitOfHormuz #OilPrices #USMilitary #IranConflict #ShippingSecurity</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/remote-robot-surgery-1.jpg" alt="Revolutionizing Cancer Care: UK Surgeons Achieve Groundbreaking Remote Robot Surgery" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/revolutionizing-cancer-care-uk-surgeons-achieve-groundbreaking-remote-robot-surgery" title="Revolutionizing Cancer Care: UK Surgeons Achieve Groundbreaking Remote Robot Surgery">Revolutionizing Cancer Care: UK Surgeons Achieve Groundbreaking Remote Robot Surgery</a></h3>
+          <p class="article-excerpt">In a historic first, U.K. surgeons successfully executed a prostate cancer operation from 1,500 miles away, marking a pivotal moment for robot-assisted telesurgery. This remarkable advancement reshapes access to critica…</p>
+          <div class="article-hashtags">#RemoteSurgery #HealthcareInnovation #MedicalTechnology #RoboticsInSurgery #Telesurgery</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107255.jpg" alt="Celebrating Excellence: MPCC Business Student Achieves Perfect Score" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/celebrating-excellence-mpcc-business-student-achieves-perfect-score" title="Celebrating Excellence: MPCC Business Student Achieves Perfect Score">Celebrating Excellence: MPCC Business Student Achieves Perfect Score</a></h3>
+          <p class="article-excerpt">A standout achievement shines in the world of academia as an MPCC Business student claims a perfect score, highlighting the intersection of determination and opportunity in education. This story reflects how individual…</p>
+          <div class="article-hashtags">#EducationExcellence #MPCC #BusinessAchievement #CommunityGrowth #FutureLeaders</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
